@@ -11,7 +11,25 @@ def Bubble_Sort(lst):
     return lst
 
 
+def Selection_Sort(lst):
+    # 选择排序
+    for j in range(len(lst)-1):
+        min_num = j
+        for i in range(j,len(lst)):
+            if lst[i] < lst[min_num]:
+                min_num = i
+        # 交换
+        lst[j],lst[min_num] = lst[min_num],lst[j]
+    return lst
+
+
+def Insertion_Sort(lst):
+    # 插入排序
+    
+    return lst
+
 
 if __name__ == "__main__":
-    res = Bubble_Sort(lst)
+
+    res = Selection_Sort(lst)
     print(res)
