@@ -25,7 +25,9 @@ def Selection_Sort(lst):
 
 def Insertion_Sort(lst):
     # 插入排序
-    
+    for i in range(partition):
+        if lst[x] < lst[i]:
+            lst[x] = 
     return lst
 
 
