@@ -25,13 +25,17 @@ def Selection_Sort(lst):
 
 def Insertion_Sort(lst):
     # 插入排序
-    for i in range(partition):
-        if lst[x] < lst[i]:
-            lst[x] = 
+    for i in range(1,len(lst)):
+        for j in range(i,0,-1):# j 是有序序列和当前值的 倒序
+            if lst[j] < lst[j-1]:
+                lst[j],lst[j-1] = lst[j-1],lst[j]
+            else:
+                break
     return lst
+
 
 
 if __name__ == "__main__":
 
-    res = Selection_Sort(lst)
+    res = Insertion_Sort(lst)
     print(res)
